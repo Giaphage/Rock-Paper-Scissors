@@ -2,9 +2,7 @@
 
 from random import randint
 
-play_again = True
-
-while play_again == True:
+while True:
 
     player_choice_input = input("Choose Rock Paper or Scissors! (R/P/S): ")
 
@@ -51,7 +49,7 @@ while play_again == True:
     if user_play_again == "Y" :
         print("Let's go again!")
     elif user_play_again == "N" :
-        play_again == False
         print("Let's take a break.")
+        break
     else :
         print("Invalid Input.")
